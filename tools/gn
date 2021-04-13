@@ -143,7 +143,7 @@ def to_gn_args(args):
     gn_args['flutter_enable_skshaper'] = args.enable_skshaper
     if args.enable_skshaper:
       gn_args['skia_use_icu'] = True
-      gn_args['flutter_always_use_skshaper'] = args.always_use_skshaper
+      gn_args['flutter_always_use_skshaper'] = True
     if args.target_os == 'winuwp':
       gn_args['skia_enable_winuwp'] = True
     gn_args['is_official_build'] = True    # Disable Skia test utilities.
